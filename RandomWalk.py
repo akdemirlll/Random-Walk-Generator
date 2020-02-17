@@ -28,10 +28,12 @@ class RandomWalk:
                 end=next_station
         return path
 
-w=RandomWalk(['A','B','C','D','E','F','G'])
+    
+if __name__ == '__main__':
+    w=RandomWalk(['A','B','C','D','E','F','G'])
 
-w.walk()
-['C', 'D', 'E', 'F', 'G']
+    w.walk()
+#     ['C', 'D', 'E', 'F', 'G']
 
-w.walk(start='D')
-['D', 'E', 'F', 'E', 'D', 'E', 'F', 'G']
+    w.walk(start='D')
+# ['D', 'E', 'F', 'E', 'D', 'E', 'F', 'G']
