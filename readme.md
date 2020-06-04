@@ -1,5 +1,7 @@
 # Random Walk Generator
-Generates random walk sequences between 'A' and 'G' destinations.
+Generates random walk sequences between start point and destination.
+
 Rules:
-- Only one step move allowed to left or right
-- 
+- It starts from randomly choosen point if not given
+- Only one step at once (left or right)
+- Destinations on both sides are 'A' or 'G', or can be determined by user 
