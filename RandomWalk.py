@@ -10,7 +10,7 @@ class RandomWalk:
         if start==None:
             start=np.random.choice(self.start_point)
         if start not in self.stations:
-            raise ValueError ('gecersiz baslangic noktasi')
+            raise ValueError ('invalid start point')
         else:
             pass
         path.append(start)
@@ -33,7 +33,7 @@ if __name__ == '__main__':
     w=RandomWalk(['A','B','C','D','E','F','G'])
 
     w.walk()
-#     ['C', 'D', 'E', 'F', 'G']
+#   ['C', 'D', 'E', 'F', 'G']
 
     w.walk(start='D')
-# ['D', 'E', 'F', 'E', 'D', 'E', 'F', 'G']
+#   ['D', 'E', 'F', 'E', 'D', 'E', 'F', 'G']
