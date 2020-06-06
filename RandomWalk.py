@@ -1,10 +1,22 @@
 class RandomWalk:
+    """Create a bounded random walk generator."""
     def __init__(self,stations):
+        """Create a random walk generator instance.
+        
+        Arguments:
+        ---------------
+        stations : list, unique step names.
+        
+        Returns:
+        ---------------
+        path     : list, ordered visited steps.
+        """
         self.stations=stations
         self.start_point=stations[1:-1]
         self.directions=['R','L']
 
     def walk(self,start=None):
+        """Generate random walk."""
         path=[]
         end=None
         if start==None:
