@@ -47,5 +47,6 @@ if __name__ == '__main__':
     w.walk()
 #   ['C', 'D', 'E', 'F', 'G']
 
-    w.walk(start='D')
+""""start point given"""
+    w.walk(start='D') 
 #   ['D', 'E', 'F', 'E', 'D', 'E', 'F', 'G']
